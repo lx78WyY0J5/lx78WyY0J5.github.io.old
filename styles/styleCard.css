@@ -20,7 +20,7 @@
 }
 
 .card-block {
-  display: inline-table;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
