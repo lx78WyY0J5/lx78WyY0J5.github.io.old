@@ -1,0 +1,36 @@
+body .gist .highlight {
+    background-color: #00000000;
+}
+
+body .gist .gist-meta {
+    background-color: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    color: white;
+}
+
+body .gist .gist-meta a {
+    background: linear-gradient(-45deg, red, green, blue, pink);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255, 255, 255, 0);
+}
+
+body .gist .gist-data {
+    background-color: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+}
+
+body .gist .blob-code-inner {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(-45deg, red, green, blue, pink);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255, 255, 255, 0);
+}
