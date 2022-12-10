@@ -1,5 +1,5 @@
 .text {
-  font-size: 30px;
+  font-size: 20px;
   align-items: inherit;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .text-name {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -25,7 +25,7 @@
 }
 
 .text-date {
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .text-justify {
@@ -37,7 +37,7 @@
 }
 
 .text-description {
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .text-inline {
@@ -46,7 +46,7 @@
 }
 
 .text-title {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -64,5 +64,5 @@
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 20px;
 }

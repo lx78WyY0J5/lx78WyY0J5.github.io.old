@@ -15,9 +15,7 @@
   transition: 40s;
 }
 
-.card-size {
-  min-width: 43%;
-}
+.card-size {}
 
 .card-block {
   display: inline-block;
