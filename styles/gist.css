@@ -6,6 +6,8 @@ body .gist .gist-meta {
     background-color: rgb(255, 255, 255, 0.1);
     backdrop-filter: blur(25px);
     color: white;
+
+    border-radius: 0px 0px 16px 16px;
 }
 
 body .gist .gist-meta a {
@@ -15,11 +17,18 @@ body .gist .gist-meta a {
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255, 255, 255, 0);
+
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 body .gist .gist-data {
     background-color: rgb(255, 255, 255, 0.1);
     backdrop-filter: blur(25px);
+
+    border-color: transparent;
+
+    border-radius: 16px 16px 0px 0px;
 }
 
 body .gist .blob-code-inner {
@@ -33,4 +42,8 @@ body .gist .blob-code-inner {
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255, 255, 255, 0);
+}
+
+body .gist .gist-file {
+    border-color: transparent;
 }
