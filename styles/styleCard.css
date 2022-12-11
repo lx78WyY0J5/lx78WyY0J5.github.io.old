@@ -65,7 +65,7 @@
 
 .topnav {
   position: absolute;
-  top: 10px;
+  top: 70px;
   left: 650px;
 }
 
@@ -90,17 +90,11 @@
 .iopagenav {
   position: absolute;
   top: 115px;
-  left: 650px;
+  left: 800px;
 }
 
 .livenav {
   position: absolute;
   top: 115px;
-  left: 975px;
-}
-
-.nolivenav {
-  position: absolute;
-  top: 115px;
-  left: 1200px;
+  left: 1020px;
 }
