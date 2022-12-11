@@ -22,9 +22,6 @@
 }
 
 .card-effect {
-  /*backdrop-filter: blur(2px);
-  opacity: 0.5;
-  filter: blur(2px);*/
   opacity: 1;
   backdrop-filter: blur(10px);
   filter: blur(0px)

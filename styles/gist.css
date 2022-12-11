@@ -1,3 +1,10 @@
+.github-stat {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px;
+    height: 160px;
+}
+
 body .gist .highlight {
     background-color: #00000000;
 }
@@ -42,6 +49,10 @@ body .gist .blob-code-inner {
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255, 255, 255, 0);
+}
+
+body .gist .blob-code-inner::selection {
+    background: rgba(255, 255, 255, 0);
 }
 
 body .gist .gist-file {
