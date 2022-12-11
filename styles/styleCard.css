@@ -86,3 +86,21 @@
   bottom: 10px;
   left: 0px;
 }
+
+.iopagenav {
+  position: absolute;
+  top: 115px;
+  left: 650px;
+}
+
+.livenav {
+  position: absolute;
+  top: 115px;
+  left: 975px;
+}
+
+.nolivenav {
+  position: absolute;
+  top: 115px;
+  left: 1200px;
+}
