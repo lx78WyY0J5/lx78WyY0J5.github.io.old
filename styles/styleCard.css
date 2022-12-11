@@ -62,3 +62,27 @@
   backdrop-filter: blur(10px);
   filter: blur(0px)
 }
+
+.topnav {
+  position: absolute;
+  top: 10px;
+  left: 650px;
+}
+
+.cvnav {
+  position: absolute;
+  top: 10px;
+  left: 800px;
+}
+
+.unicornnav {
+  position: absolute;
+  top: 10px;
+  left: 1020px;
+}
+
+.botnav {
+  position: fixed;
+  bottom: 10px;
+  left: 0px;
+}

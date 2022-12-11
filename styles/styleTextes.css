@@ -24,6 +24,15 @@
   text-decoration: none;
 }
 
+.anchor {
+  display: inline-block;
+  font-size: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .text-date {
   font-size: 10px;
 }
