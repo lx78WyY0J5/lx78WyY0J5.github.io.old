@@ -24,8 +24,8 @@
 }
 
 .anchor {
-  display: inline-block;
-  font-size: 50px;
+  display: block;
+  font-size: 25px;
 }
 
 html {

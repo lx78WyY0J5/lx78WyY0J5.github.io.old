@@ -64,37 +64,21 @@
 }
 
 .topnav {
-  position: absolute;
-  top: 70px;
-  left: 650px;
-}
-
-.cvnav {
-  position: absolute;
-  top: 10px;
-  left: 800px;
-}
-
-.unicornnav {
-  position: absolute;
-  top: 10px;
-  left: 1020px;
+  position: fixed;
+  top: 150px;
+  left: 20px;
+  z-index: 100;
 }
 
 .botnav {
   position: fixed;
-  bottom: 10px;
-  left: 0px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
 }
 
-.iopagenav {
-  position: absolute;
-  top: 115px;
-  left: 800px;
-}
-
-.livenav {
-  position: absolute;
-  top: 115px;
-  left: 1020px;
+.nav {
+  display: inline-block;
+  z-index: 100;
+  position: relative;
 }
