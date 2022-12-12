@@ -62,23 +62,3 @@
   backdrop-filter: blur(10px);
   filter: blur(0px)
 }
-
-.topnav {
-  position: fixed;
-  top: 150px;
-  left: 20px;
-  z-index: 100;
-}
-
-.botnav {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-}
-
-.nav {
-  display: inline-block;
-  z-index: 100;
-  position: relative;
-}
