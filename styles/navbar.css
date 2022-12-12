@@ -16,13 +16,13 @@
 .topnav {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 40px;
     z-index: 100;
 }
 
 .botnav {
     position: fixed;
     bottom: 120px;
-    right: 20px;
+    right: 40px;
     z-index: 100;
 }
