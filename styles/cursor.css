@@ -17,13 +17,14 @@ button {
 }
 
 .cursor.hover {
-    transform: rotate(90deg) scale(2);
-    background: #f77e21;
+    transform: rotate(90deg) scale(1.5);
+    border-radius: 500px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .cursor.click {
     transform: scale(0.5);
-    opacity: 0.6;
+    opacity: 0.2;
 }
 
 .cursor {
@@ -31,13 +32,13 @@ button {
     width: 20px;
     height: 20px;
     border-radius: 5px;
-    background: #ffb200;
+    background: rgba(255, 255, 255, 0.6);
     position: fixed;
     transform: translate(-50%, -50%);
     z-index: 999;
     pointer-events: none;
     transform: scale(1);
     opacity: 1;
-    transition: a 0.5s ease, transform 0.5s ease, opacity 0.5s ease-out;
+    transition: background 1s ease, transform 1s ease, opacity 0.5s ease-out;
     transform-origin: center;
 }

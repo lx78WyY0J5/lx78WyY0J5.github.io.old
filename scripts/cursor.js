@@ -7,27 +7,28 @@ document.addEventListener("mousemove", (event) => {
 });
 
 const cursoreffect = document.querySelector("cursor");
-let anchors = document.getElementsByClassName("card");
+let anchors = document.getElementsByClassName("text-link");
+
 console.log(anchors);
-for (const item of anchors) {
-    console.log("test");
+for (item of anchors) {
+    console.log(item);
     item.addEventListener("mouseenter", linkEnterHandler);
     item.addEventListener("mouseleave", linkLeaveHandler);
 }
 
-document.addEventListener("mousedown", () => {
-    cursor.classList.add("click");
-});
-
-document.addEventListener("mouseup", () => {
-    cursor.classList.remove("click");
-});
-
 function linkEnterHandler() {
-    console.log("test");
     cursor.classList.add("hover");
 }
 
 function linkLeaveHandler() {
     cursor.classList.remove("hover");
-}  
+}
+
+window.addEventListener("mousedown", () => {
+    cursor.classList.add("click");
+});
+
+window.addEventListener("mouseup", () => {
+    cursor.classList.remove("click");
+});
+
