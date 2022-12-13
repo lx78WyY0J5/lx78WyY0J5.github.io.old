@@ -37,6 +37,17 @@ function toggleMainCard() {
     }
 }
 
+function toggleOtherCard() {
+    document.getElementById("badge-card").style.display = "none";
+    document.getElementById("github-card").style.display = "none";
+    document.getElementById("techno-card").style.display = "none";
+    document.getElementById("cv-card").style.display = "none";
+    document.getElementById("jeux-card").style.display = "none";
+    document.getElementById("unicorn-card").style.display = "none";
+    document.getElementById("giscus-card").style.display = "none";
+}
+
+
 function toggleBadgeCard() {
     var a = document.getElementById("badge-card");
     if (a.style.display === "none") {
@@ -56,7 +67,9 @@ function toggleGithubCard() {
 }
 
 function toggleBadgeGithubCard() {
-    toggleMainCard();
+    if (document.getElementById("github-card").style.display === "none") {
+        toggleOtherCard();
+    }
     toggleBadgeCard();
     toggleGithubCard();
 }
@@ -80,7 +93,9 @@ function toggleCVCard() {
 }
 
 function toggleCVTechnoCard() {
-    toggleMainCard();
+    if (document.getElementById("techno-card").style.display === "none") {
+        toggleOtherCard();
+    }
     toggleCVCard();
     toggleTechnoCard();
 }
@@ -89,6 +104,7 @@ function toggleCVTechnoCard() {
 function toggleJeuxCard() {
     var a = document.getElementById("jeux-card");
     if (a.style.display === "none") {
+        toggleOtherCard();
         a.style.display = "inline-block";
     } else {
         a.style.display = "none";
@@ -98,6 +114,7 @@ function toggleJeuxCard() {
 function toggleUnicornCard() {
     var a = document.getElementById("unicorn-card");
     if (a.style.display === "none") {
+        toggleOtherCard();
         a.style.display = "inline-block";
     } else {
         a.style.display = "none";
@@ -107,6 +124,7 @@ function toggleUnicornCard() {
 function toggleGiscusCard() {
     var a = document.getElementById("giscus-card");
     if (a.style.display === "none") {
+        toggleOtherCard();
         a.style.display = "inline-block";
     } else {
         a.style.display = "none";
