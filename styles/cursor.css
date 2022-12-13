@@ -1,0 +1,43 @@
+.cursor1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid rgb(255, 255, 255);
+    z-index: 100;
+}
+
+a {
+    cursor: none;
+}
+
+button {
+    cursor: none;
+}
+
+.cursor.hover {
+    transform: rotate(90deg) scale(2);
+    background: #f77e21;
+}
+
+.cursor.click {
+    transform: scale(0.5);
+    opacity: 0.6;
+}
+
+.cursor {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: #ffb200;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    pointer-events: none;
+    transform: scale(1);
+    opacity: 1;
+    transition: a 0.5s ease, transform 0.5s ease, opacity 0.5s ease-out;
+    transform-origin: center;
+}

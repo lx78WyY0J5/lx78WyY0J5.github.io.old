@@ -9,15 +9,14 @@
   width: fit-content;
   height: fit-content;
 
+  vertical-align: top;
+
   margin-left: 2%;
   margin-top: 2%;
 
   transition: 40s;
-}
 
-.card-block {
   display: inline-block;
-  vertical-align: top;
 }
 
 .card-effect {
