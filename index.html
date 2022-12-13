@@ -54,6 +54,7 @@
       </script>
     <script src="scripts/button.js"></script>
     <script src="scripts/cursor.js"></script>
+    <script src="scripts/rickroll.js"></script>
   </div>
 
   <div id="cursor" class="cursor"></div>
@@ -81,7 +82,7 @@
       <div class="text-link anchor text-font card nav" style="" onclick="toggleCVCard()">💼</div>
     </div>
 
-    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;" onclick="toggleBadgeGithubCard()">
+    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;" onclick=" toggleBadgeGithubCard()">
       📊Github📈</div>
     <div class="text-link anchor text-font card nav" style="margin-top:1.5%;margin-left: 0.2%;"
       onclick="toggleCVTechnoCard()">
@@ -159,8 +160,10 @@
     </div>
   </div>
 
-  <div id="badge-card" class="card card-effect" style="display:none;width: 300px;margin-left:0.5%;">
+  <div id="badge-card" class="card card-effect" style="display:none;width: 300px;margin-left:0.5%;"
+    onclick="startPlayer()">
     <div class="container" style="padding: 35px;">
+      <div id="player"></div>
       <a target="_blank" class="text-link" href="https://github.com/lx78WyY0J5/lx78WyY0J5.github.io">
         <img
           src="https://github.com/lx78WyY0J5/lx78WyY0J5.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main"
@@ -346,7 +349,7 @@
     <script src="https://gist.github.com/lx78WyY0J5/1525e23e7a3502c71014a499394ee967.js"></script>
     <a id="unicorn"></a>
   </div>
-  
+
   <div id="jeux-card" class="card card-effect" style="display:none;">
     <div class="container">
       <div>
