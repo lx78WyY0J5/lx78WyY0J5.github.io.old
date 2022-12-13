@@ -8,6 +8,7 @@ document.addEventListener("mousemove", (event) => {
 
 const cursoreffect = document.querySelector("cursor");
 let anchors = document.getElementsByClassName("card");
+console.log(anchors);
 for (const item of anchors) {
     console.log("test");
     item.addEventListener("mouseenter", linkEnterHandler);
