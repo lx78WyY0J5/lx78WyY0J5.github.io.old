@@ -9,9 +9,7 @@ document.addEventListener("mousemove", (event) => {
 const cursoreffect = document.querySelector("cursor");
 let anchors = document.getElementsByClassName("text-link");
 
-console.log(anchors);
 for (item of anchors) {
-    console.log(item);
     item.addEventListener("mouseenter", linkEnterHandler);
     item.addEventListener("mouseleave", linkLeaveHandler);
 }
