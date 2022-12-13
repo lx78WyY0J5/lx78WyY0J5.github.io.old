@@ -53,23 +53,22 @@
 
 <body class="body" style="cursor: none;">
 
-  <img src="./images/avatar.gif" class="text-link anchor text-font avatar avatar-out text-link"
-    onclick="toggleMainCard()">
+  <img src="./images/avatar.gif" class="text-link anchor text-font avatar avatar-out text-link" id="avatar-out"
+    onclick="toggleMainCard()" style="display: none;">
 
   <div id="nav-card" class="navholder">
-    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;" onclick="toggleBadgeCard()">📈Badges</div>
-    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;margin-left: 0.5%;"
-      onclick="toggleGithubCard()">📊Stats</div>
+    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;" onclick="toggleBadgeGithubCard()">
+      📊Badges📈</div>
     <div class="text-link anchor text-font card nav" style="margin-top:1.5%;margin-left: 0.5%;"
       onclick="toggleUnicornCard()">🦄</div>
+    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;margin-left: 0.5%;"
+      onclick="toggleJeuxCard()">🎮</div>
     <a target="_blank" href="http://127.0.0.1:3000/index.html" class="text-link anchor text-font card nav"
       style="margin-top:1.5%;margin-left: 0.5%;">💻127.0.0.1</a>
     <br>
     <div class="text-link anchor text-font card nav" style="margin-top:0.25%;" onclick="toggleCVCard()">💼</div>
     <br>
     <div class="text-link anchor text-font card nav" style="margin-top:0.25%;" onclick="toggleTechnoCard()">💾</div>
-    <br>
-    <div class="text-link anchor text-font card nav" style="margin-top:0.25%;" onclick="toggleJeuxCard()">🎮</div>
   </div>
 
   <div id="main-card" class="card" style="width: 600px;">
@@ -127,7 +126,7 @@
     </div>
   </div>
 
-  <div id="badge-card" class="card" style="display:none;width: 300px;margin-left:0.5%;">
+  <div id="badge-card" class="card card-effect" style="width: 300px;margin-left:0.5%;">
     <div class="container" style="padding: 35px;">
       <a target="_blank" class="text-link" href="https://github.com/lx78WyY0J5/lx78WyY0J5.github.io">
         <img
@@ -178,7 +177,7 @@
     </div>
   </div>
 
-  <div id="github-card" class="card card-effect" style="display:none;margin-left:0.5%;">
+  <div id="github-card" class="card card-effect" style="margin-left:0.5%;">
     <div class="container">
       <div>
         <img class="github-stat"

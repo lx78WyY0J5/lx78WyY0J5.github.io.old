@@ -8,11 +8,25 @@ function toggleButtons() {
         }
     }
 }
+function toggleAvatarOut() {
+    var a = document.getElementById("avatar-out");
+    if (a.style.display === "none") {
+        a.style.display = "inline-block";
+    } else {
+        a.style.display = "none";
+    }
+    document.getElementById("badge-card").style.display = "none";
+    document.getElementById("github-card").style.display = "none";
+    document.getElementById("techno-card").style.display = "none";
+    document.getElementById("cv-card").style.display = "none";
+    document.getElementById("jeux-card").style.display = "none";
+    document.getElementById("unicorn-card").style.display = "none";
+}
 
 function toggleMainCard() {
     var a = document.getElementById("main-card");
     var b = document.getElementById("nav-card");
-
+    toggleAvatarOut();
     if (a.style.display === "none") {
         a.style.display = "inline-block";
         b.style.display = "inline-block";
@@ -23,6 +37,7 @@ function toggleMainCard() {
 }
 
 function toggleBadgeCard() {
+    //toggleMainCard();
     var a = document.getElementById("badge-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -32,6 +47,7 @@ function toggleBadgeCard() {
 }
 
 function toggleGithubCard() {
+    //toggleMainCard();
     var a = document.getElementById("github-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -40,7 +56,13 @@ function toggleGithubCard() {
     }
 }
 
+function toggleBadgeGithubCard() {
+    toggleBadgeCard();
+    toggleGithubCard();
+}
+
 function toggleTechnoCard() {
+    toggleMainCard();
     var a = document.getElementById("techno-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -50,6 +72,7 @@ function toggleTechnoCard() {
 }
 
 function toggleCVCard() {
+    toggleMainCard();
     var a = document.getElementById("cv-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -59,6 +82,7 @@ function toggleCVCard() {
 }
 
 function toggleJeuxCard() {
+    toggleMainCard();
     var a = document.getElementById("jeux-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -68,6 +92,7 @@ function toggleJeuxCard() {
 }
 
 function toggleUnicornCard() {
+    toggleMainCard();
     var a = document.getElementById("unicorn-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
