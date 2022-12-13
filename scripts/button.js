@@ -21,6 +21,7 @@ function toggleAvatarOut() {
     document.getElementById("cv-card").style.display = "none";
     document.getElementById("jeux-card").style.display = "none";
     document.getElementById("unicorn-card").style.display = "none";
+    document.getElementById("giscus-card").style.display = "none";
 }
 
 function toggleMainCard() {
