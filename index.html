@@ -52,25 +52,29 @@
 </head>
 
 <body class="body" style="cursor: none;">
-  <button class="" style="z-index: 100;top: 50px;position: fixed;" onclick="toggleButtons()">Buttons</button>
-  <button class="button" style="left: 10px;" onclick="toggleMainCard()">main-card</button>
-  <button class="button" style="left: 100px;" onclick="toggleBadgeCard()">badge-card</button>
-  <button class="button" style="left: 200px;" onclick="toggleGithubCard()">github-card</button>
-  <button class="button" style="left: 300px;" onclick="toggleTechnoCard()">techno-card</button>
-  <button class="button" style="left: 400px;" onclick="toggleCVCard()">cv-card</button>
-  <button class="button" style="left: 500px;" onclick="toggleJeuxCard()">jeux-card</button>
-  <button class="button" style="left: 600px;" onclick="toggleUnicornCard()">unicorn</button>
+
+  <img src="./images/avatar.gif" class="text-link anchor text-font avatar avatar-out text-link"
+    onclick="toggleMainCard()">
 
   <div id="nav-card" class="navholder">
-    <a href="#cv" class="text-link anchor text-font card nav">📃CV</a>
-    <a href="#unicorn" class="text-link anchor text-font card nav">🦄Gist</a>
-    <a target="_blank" href="http://127.0.0.1:3000/index.html"
-      class="text-link anchor text-font card nav">💻127.0.0.1</a>
+    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;" onclick="toggleBadgeCard()">📈Badges</div>
+    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;margin-left: 0.5%;"
+      onclick="toggleGithubCard()">📊Stats</div>
+    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;margin-left: 0.5%;"
+      onclick="toggleUnicornCard()">🦄</div>
+    <a target="_blank" href="http://127.0.0.1:3000/index.html" class="text-link anchor text-font card nav"
+      style="margin-top:1.5%;margin-left: 0.5%;">💻127.0.0.1</a>
+    <br>
+    <div class="text-link anchor text-font card nav" style="margin-top:0.25%;" onclick="toggleCVCard()">💼</div>
+    <br>
+    <div class="text-link anchor text-font card nav" style="margin-top:0.25%;" onclick="toggleTechnoCard()">💾</div>
+    <br>
+    <div class="text-link anchor text-font card nav" style="margin-top:0.25%;" onclick="toggleJeuxCard()">🎮</div>
   </div>
 
   <div id="main-card" class="card" style="width: 600px;">
     <div class="container">
-      <img src="./images/avatar.gif" onclick='alert("✌");' class="text-link avatar">
+      <img src="./images/avatar.gif" onclick='alert("✌");' class="text-link avatar avatar-inside">
       <p class="text-name text-font autotype">gpa2psedoh</p>
       <p class="text-justify text-title text-padding text-font">Développeur & Administrateur réseaux amateur</p>
       <p class="text-font text-bold">Recherche projets & emplois</p>
@@ -122,8 +126,8 @@
       </a>
     </div>
   </div>
-  <!--display:none;-->
-  <div id="badge-card" class="card" style="width: 300px;margin-left:0.5%;">
+
+  <div id="badge-card" class="card" style="display:none;width: 300px;margin-left:0.5%;">
     <div class="container" style="padding: 35px;">
       <a target="_blank" class="text-link" href="https://github.com/lx78WyY0J5/lx78WyY0J5.github.io">
         <img
@@ -174,7 +178,7 @@
     </div>
   </div>
 
-  <div id="github-card" class="card card-effect" style="margin-left:0.5%;">
+  <div id="github-card" class="card card-effect" style="display:none;margin-left:0.5%;">
     <div class="container">
       <div>
         <img class="github-stat"
@@ -193,7 +197,7 @@
     </div>
   </div>
 
-  <div id="techno-card" class="card card-effect">
+  <div id="techno-card" class="card card-effect" style="display:none;">
     <div class="container">
 
       <div>
@@ -243,7 +247,7 @@
     </div>
   </div>
 
-  <div id="cv-card" class="card card-effect">
+  <div id="cv-card" class="card card-effect" style="display:none;">
     <div class="container">
       <div>
         <p class="text-justify text-title text-padding text-font">EXPÉRIENCES PROFESSIONELLE</p>
@@ -308,7 +312,7 @@
     <a id="cv"></a>
   </div>
 
-  <div id="jeux-card" class="card card-effect">
+  <div id="jeux-card" class="card card-effect" style="display:none;">
     <div class="container">
       <div>
         <p class="text-justify text-title text-inline text-padding text-font">JEUX EN COURS</p>
@@ -344,7 +348,7 @@
   </div>
 
 
-  <div id="unicorn-card" style="max-width: min-content;max-height: min-content;padding: 50px; display: inline-block;">
+  <div id="unicorn-card" style="max-width: min-content;max-height: min-content;padding: 50px; display:none;">
     <script src="https://gist.github.com/lx78WyY0J5/1525e23e7a3502c71014a499394ee967.js"></script>
     <a id="unicorn"></a>
   </div>

@@ -1,21 +1,42 @@
 .avatar {
   border-radius: 128px;
-  border-style:solid;
+  border-style: solid;
   border-width: 3px;
-  border-color: rgb(255,255,255, 0.5);
-  width: 15%;
-  height: 15%;
-  opacity: 0.65;
-  margin: 28px 28px 15px 28px;
+  border-color: rgb(255, 255, 255, 0.5);
+
   transition: 0.6s;
   padding: 10px;
 }
 
+.avatar-out {
+  opacity: 0.5;
+  width: 64px;
+  height: 64px;
+  z-index: 101;
+  left: 5px;
+  top: 5px;
+  position: absolute;
+}
+
+.avatar-out:hover {
+  width: 96px;
+  height: 96px;
+}
+
+.avatar-inside {
+  opacity: 0.8;
+  width: 25%;
+  height: 25%;
+  margin: 28px 28px 15px 35px;
+}
+
+.avatar-inside:hover {
+  width: 30%;
+  height: 30%;
+}
+
 .avatar:hover {
   transition: 0.6s;
-  width: 20%;
-  height: 20%;
   padding: 0px;
   opacity: 1;
 }
-
