@@ -57,18 +57,24 @@
     onclick="toggleMainCard()" style="display: none;">
 
   <div id="nav-card" class="navholder">
+
+    <div style="display: none;">
+      <div class="text-link anchor text-font card nav" style="" onclick="toggleBadgeCard()">📊</div>
+      <div class="text-link anchor text-font card nav" style="" onclick="toggleGithubCard()">📈</div>
+      <div class="text-link anchor text-font card nav" style="" onclick="toggleTechnoCard()">💾</div>
+      <div class="text-link anchor text-font card nav" style="" onclick="toggleCVCard()">💼</div>
+    </div>
+
     <div class="text-link anchor text-font card nav" style="margin-top:1.5%;" onclick="toggleBadgeGithubCard()">
       📊Badges📈</div>
-    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;margin-left: 0.5%;"
-      onclick="toggleUnicornCard()">🦄</div>
-    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;margin-left: 0.5%;"
-      onclick="toggleJeuxCard()">🎮</div>
+    <div class="text-link anchor text-font card nav" style="margin-top:1.5%;" onclick="toggleCVTechnoCard()">
+      💼CV💾</div>
     <a target="_blank" href="http://127.0.0.1:3000/index.html" class="text-link anchor text-font card nav"
-      style="margin-top:1.5%;margin-left: 0.5%;">💻127.0.0.1</a>
+      style="margin-top:1.5%;">💻127.0.0.1</a>
     <br>
-    <div class="text-link anchor text-font card nav" style="margin-top:0.25%;" onclick="toggleCVCard()">💼</div>
+    <div class="text-link anchor text-font card nav" style="margin-top: 0.5%;" onclick="toggleUnicornCard()">🦄</div>
     <br>
-    <div class="text-link anchor text-font card nav" style="margin-top:0.25%;" onclick="toggleTechnoCard()">💾</div>
+    <div class="text-link anchor text-font card nav" style="margin-top:0.5%;" onclick="toggleJeuxCard()">🎮</div>
   </div>
 
   <div id="main-card" class="card" style="width: 600px;">
@@ -84,13 +90,18 @@
         <p class="text text-font text-inline">Orléans, 🇫🇷</p>
       </div>
       <a target="_blank" class="text-link" href="https://discord.com/users/748530290917638165" class="text-link">
-        <div class="card card-rgb container-small text-center">
+        <img class="github-stat"
+          src="https://lanyard.cnrad.dev/api/748530290917638165?bg=151515&idleMessage=...&borderRadius=0)](https://discord.com/users/748530290917638165">
+        <div class="card card-rgb container-small text-center" style="display:none;">
           <p class="logo text-font text-inline">📱</p>
           <p class="text-title text-font text-inline">Discord</p>
           <p class="text text-font text-inline">@</p>
           <p class="text text-title text-font text-inline">!g81Qp5wH</p>
           <p class="text text-font text-inline">#9999</p>
         </div>
+      </a>
+      <a style="display:none;" target="_blank" class="text-link" href="https://discord.gg/ssC6KYMjZz">
+        <img src="https://discordapp.com/api/guilds/1015687367102836869/widget.png" style="display:block;width: 180px;">
       </a>
       <a href="mailto:9j2k37st@gmail.com" class="text-link">
         <div class="card card-rgb container-small text-center ">
@@ -119,14 +130,10 @@
           <p class="text text-font text-inline">.fr</p>
         </div>
       </a>
-      <a target="_blank" class="text-link" href="https://discord.gg/ssC6KYMjZz">
-        <img src="https://discordapp.com/api/guilds/1015687367102836869/widget.png"
-          style="margin-top: 20px; width: 180px;">
-      </a>
     </div>
   </div>
 
-  <div id="badge-card" class="card card-effect" style="width: 300px;margin-left:0.5%;">
+  <div id="badge-card" class="card card-effect" style="display:none;width: 300px;margin-left:0.5%;">
     <div class="container" style="padding: 35px;">
       <a target="_blank" class="text-link" href="https://github.com/lx78WyY0J5/lx78WyY0J5.github.io">
         <img
@@ -177,11 +184,9 @@
     </div>
   </div>
 
-  <div id="github-card" class="card card-effect" style="margin-left:0.5%;">
+  <div id="github-card" class="card card-effect" style="display:none;margin-left:0.5%;">
     <div class="container">
       <div>
-        <img class="github-stat"
-          src="https://lanyard.cnrad.dev/api/748530290917638165?bg=151515&idleMessage=...&borderRadius=0)](https://discord.com/users/748530290917638165">
         <img class="github-stat"
           src="https://github-readme-stats.vercel.app/api?username=lx78WyY0J5&count_private=true&show_icons=true&theme=dark&hide_border=true">
         <br>
@@ -347,7 +352,7 @@
   </div>
 
 
-  <div id="unicorn-card" style="max-width: min-content;max-height: min-content;padding: 50px; display:none;">
+  <div id="unicorn-card" style="max-width: min-content;max-height: min-content;padding: 50px; display:inline-block;">
     <script src="https://gist.github.com/lx78WyY0J5/1525e23e7a3502c71014a499394ee967.js"></script>
     <a id="unicorn"></a>
   </div>

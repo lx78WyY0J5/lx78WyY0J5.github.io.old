@@ -37,7 +37,6 @@ function toggleMainCard() {
 }
 
 function toggleBadgeCard() {
-    //toggleMainCard();
     var a = document.getElementById("badge-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -47,7 +46,6 @@ function toggleBadgeCard() {
 }
 
 function toggleGithubCard() {
-    //toggleMainCard();
     var a = document.getElementById("github-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -57,12 +55,12 @@ function toggleGithubCard() {
 }
 
 function toggleBadgeGithubCard() {
+    toggleMainCard();
     toggleBadgeCard();
     toggleGithubCard();
 }
 
 function toggleTechnoCard() {
-    toggleMainCard();
     var a = document.getElementById("techno-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -72,7 +70,6 @@ function toggleTechnoCard() {
 }
 
 function toggleCVCard() {
-    toggleMainCard();
     var a = document.getElementById("cv-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -81,8 +78,14 @@ function toggleCVCard() {
     }
 }
 
-function toggleJeuxCard() {
+function toggleCVTechnoCard() {
     toggleMainCard();
+    toggleCVCard();
+    toggleTechnoCard();
+}
+
+
+function toggleJeuxCard() {
     var a = document.getElementById("jeux-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
@@ -92,7 +95,6 @@ function toggleJeuxCard() {
 }
 
 function toggleUnicornCard() {
-    toggleMainCard();
     var a = document.getElementById("unicorn-card");
     if (a.style.display === "none") {
         a.style.display = "inline-block";
