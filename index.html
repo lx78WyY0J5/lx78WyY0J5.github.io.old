@@ -2,49 +2,63 @@
 <html lang="fr_FR">
 
 <head>
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/styleTextes.css">
-  <link rel="stylesheet" href="./styles/styleCard.css">
-  <link rel="stylesheet" href="./styles/styleBody.css">
-  <link rel="stylesheet" href="./styles/styleAvatar.css">
-  <link rel="stylesheet" href="./styles/styleAutoType.css">
-  <link rel="stylesheet" href="./styles/gist.css">
-  <link rel="stylesheet" href="./styles/scrollbar.css">
-  <link rel="stylesheet" href="./styles/navbar.css">
-  <link rel="stylesheet" href="./styles/button.css">
-  <link rel="stylesheet" href="./styles/cursor.css">
+  <div id="style">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleTextes.css">
+    <link rel="stylesheet" href="./styles/styleCard.css">
+    <link rel="stylesheet" href="./styles/styleBody.css">
+    <link rel="stylesheet" href="./styles/styleAvatar.css">
+    <link rel="stylesheet" href="./styles/styleAutoType.css">
+    <link rel="stylesheet" href="./styles/gist.css">
+    <link rel="stylesheet" href="./styles/scrollbar.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/cursor.css">
+  </div>
 
-  <meta http-equiv="refresh" refresh content="3600;">
-  <!--<meta http-equiv="refresh" refresh content="1800;URL=https://lx78wyy0j5.github.io">-->
+  <div id="meta">
+    <meta http-equiv="refresh" refresh content="3600;">
+    <!--<meta http-equiv="refresh" refresh content="1800;URL=https://lx78wyy0j5.github.io">-->
 
-  <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow">
 
-  <meta name="keywords" content="HTML, CSS, JavaScript, Français, France, Développeur, Minecraft, Albion Online">
-  <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Français, France, Développeur, Minecraft, Albion Online">
+    <meta charset="UTF-8">
 
-  <meta property="og:determiner" content="📰" />
-  <meta property="og:title" content="lx78wyy0j5" />
-  <meta property="og:type" content="siteweb" />
-  <meta property="og:image" content="https://lx78wyy0j5.github.io/images/avatar.gif" />
-  <meta property="og:image:type" content="image/gif" />
-  <meta property="og:image:alt" content="profil pic" />
-  <meta property="og:url" content="https://lx78wyy0j5.github.io" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:site_name" content="lx78wyy0j5.github.io via uhce.fr/page" />
-  <meta property="profile:username" content="noUserName" />
-  <meta property="profile:gender" content="male|female" />
-  <meta property="og:description" content="Page d'accueil de @lx78wyy0j5, développeur Français, créateur de UHCE.fr" />
+    <meta property="og:determiner" content="📰" />
+    <meta property="og:title" content="lx78wyy0j5" />
+    <meta property="og:type" content="siteweb" />
+    <meta property="og:image" content="https://lx78wyy0j5.github.io/images/avatar.gif" />
+    <meta property="og:image:type" content="image/gif" />
+    <meta property="og:image:alt" content="profil pic" />
+    <meta property="og:url" content="https://lx78wyy0j5.github.io" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="lx78wyy0j5.github.io via uhce.fr/page" />
+    <meta property="profile:username" content="noUserName" />
+    <meta property="profile:gender" content="male|female" />
+    <meta property="og:description"
+      content="Page d'accueil de @lx78wyy0j5, développeur Français, créateur de UHCE.fr" />
 
-  <title>📰 lx78wyy0j5</title>
-  <meta name="description" content="Page d'accueil de @lx78wyy0j5">
+    <title>📰 lx78wyy0j5</title>
+    <meta name="description" content="Page d'accueil de @lx78wyy0j5">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  </div>
 
-  <script src="scripts/button.js"></script>
+  <div id="scripts">
+    <script src="https://giscus.app/client.js" data-repo="lx78WyY0J5/lx78WyY0J5.github.io" data-repo-id="R_kgDOIZqQtA"
+      data-category="Announcements" data-category-id="DIC_kwDOIZqQtM4CTCoZ" data-mapping="specific"
+      data-term="lx78wyy0j5.github.io" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1"
+      data-input-position="top" data-theme="transparent_dark" data-lang="fr" data-loading="lazy" crossorigin="anonymous"
+      async></script>
+      
+    <script src="scripts/button.js"></script>
+    <script src="scripts/cursor.js"></script>
+  </div>
 
   <div id="cursor" class="cursor"></div>
 
-  <div>
+  <div class="topBotNav">
     <a href="#" class="card botnav text-link anchor" style="padding:10px;">🚀</a>
     <a href="#bot" class="card topnav text-link anchor" style="padding:10px;">⏬</a>
   </div>
@@ -53,8 +67,10 @@
 
 <body class="body" style="cursor: none;">
 
-  <img src="./images/avatar.gif" class="text-link anchor text-font avatar avatar-out text-link" id="avatar-out"
-    onclick="toggleMainCard()" style="display: none;">
+  <div id="buttonMain">
+    <img src="./images/avatar.gif" class="text-link anchor text-font avatar avatar-out text-link" id="avatar-out"
+      onclick="toggleMainCard()" style="display: none;">
+  </div>
 
   <div id="nav-card" class="navholder">
 
@@ -72,6 +88,8 @@
       💼CV💾</div>
     <a target="_blank" href="http://127.0.0.1:3000/index.html" class="text-link anchor text-font card nav"
       style="margin-top:1.5%;margin-left: 5%;">💻127.0.0.1</a>
+    <br>
+    <div class="text-link anchor text-font card nav" style="margin-top: 0.5%;" onclick="toggleGiscusCard()">💬</div>
     <br>
     <div class="text-link anchor text-font card nav" style="margin-top: 0.5%;" onclick="toggleUnicornCard()">🦄</div>
     <br>
@@ -131,6 +149,13 @@
           <p class="text text-font text-inline">.fr</p>
         </div>
       </a>
+    </div>
+  </div>
+
+  <div id="giscus-card" class="card card-effect" style="display: inline-block;">
+    <div class="container">
+      <div class="giscus giscus-frame">
+      </div>
     </div>
   </div>
 
@@ -352,16 +377,15 @@
     </div>
   </div>
 
-
   <div id="unicorn-card" style="max-width: min-content;max-height: min-content;padding: 50px; display:inline-block;">
     <script src="https://gist.github.com/lx78WyY0J5/1525e23e7a3502c71014a499394ee967.js"></script>
     <a id="unicorn"></a>
   </div>
+
 </body>
 
 <footer>
   <a id="bot"></a>
-  <script src="scripts/cursor.js"></script>
 </footer>
 
 </html>

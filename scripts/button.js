@@ -102,3 +102,12 @@ function toggleUnicornCard() {
         a.style.display = "none";
     }
 }
+
+function toggleGiscusCard() {
+    var a = document.getElementById("giscus-card");
+    if (a.style.display === "none") {
+        a.style.display = "inline-block";
+    } else {
+        a.style.display = "none";
+    }
+}
