@@ -101,8 +101,8 @@ async function custom_pages_include() {
         await include("/pages/contents/jeux.html", "content", true);
     }
 
-    else if (pathname === "/pages/views/unicorn.html") {
-    }
+    /* else if (pathname === "/pages/views/unicorn.html") {
+    } */
 
     else if (pathname === "/404.html") {
         await include("/pages/contents/404.html", "content", true);
