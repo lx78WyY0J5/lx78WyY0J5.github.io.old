@@ -21,9 +21,9 @@ async function include_all() {
     // await include_css("/styles/content.css");
     await include("/pages/includes/content.html", "body");
 
-    await include_script("/scripts/cursor.js", "body", false);
-
     await custom_pages_include();
+    
+    await include_script("/scripts/cursor.js", "body", false);
 }
 
 async function include(link, query, queryOrIndex) {
